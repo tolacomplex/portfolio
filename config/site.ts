@@ -16,20 +16,18 @@ export const siteConfig = {
       label: "About",
       href: "/about",
     },
-  ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
     {
       label: "Projects",
       href: "/projects",
+    },
+    {
+      label: "Profile",
+      href: "/profile",
     },
   ],
   links: {
     github: "https://github.com/tolacomplex",
     facebook: "https://web.facebook.com/Ouentola",
-    telegram: "@tola_ouen"
+    telegram: "@tola_ouen",
   },
 };

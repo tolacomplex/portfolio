@@ -12,6 +12,8 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        title: ["DM serif Display", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

@@ -47,6 +47,29 @@ export const FacebookIcon: React.FC<IconSvgProps> = ({
   );
 };
 
+export const LinkendInIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => {
+  return (
+    <svg
+      height={size || height}
+      viewBox="0 0 24 24"
+      width={size || width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        clipRule="evenodd"
+        d="M20.167 3.5H4.829c-0.734 0 -1.329 0.581 -1.329 1.297v15.404c0 0.717 0.595 1.299 1.329 1.299h15.338c0.734 0 1.333 -0.582 1.333 -1.299V4.797c0 -0.716 -0.599 -1.297 -1.333 -1.297M8.838 18.838h-2.671V10.249h2.671zm-1.336 -9.764a1.548 1.548 0 0 1 -1.548 -1.548 1.547 1.547 0 1 1 3.095 0 1.548 1.548 0 0 1 -1.547 1.548m11.335 9.764h-2.667V14.662c0 -0.996 -0.02 -2.278 -1.388 -2.278 -1.39 0 -1.601 1.085 -1.601 2.206v4.25h-2.669V10.249h2.561v1.173h0.036c0.356 -0.675 1.228 -1.387 2.526 -1.387 2.702 0 3.2 1.778 3.2 4.092v4.712z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  );
+};
 export const TelegramIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
@@ -138,7 +161,7 @@ export const SunFilledIcon = ({
   </svg>
 );
 
-export const HeartFilledIcon = ({
+export const DownloadIcon = ({
   size = 24,
   width,
   height,
@@ -154,11 +177,8 @@ export const HeartFilledIcon = ({
     {...props}
   >
     <path
-      d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"
+      d="m9 7.471 1.261 -1.26a1.125 1.125 0 0 1 1.592 1.59L8.67 10.983a1.118 1.118 0 0 1 -1.592 0L3.897 7.802A1.125 1.125 0 1 1 5.49 6.21L6.75 7.471V1.125a1.125 1.125 0 1 1 2.25 0zM1.125 13.5h13.5a1.125 1.125 0 0 1 0 2.25H1.125a1.125 1.125 0 0 1 0 -2.25"
       fill="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.5}
     />
   </svg>
 );

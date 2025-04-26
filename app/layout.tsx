@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/logo-1.ico",
+    icon: "/icon-image.ico",
   },
 };
 
@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
@@ -54,7 +54,9 @@ export default function RootLayout({
                 href="https://heroui.com?utm_source=next-app-template"
                 title="heroui.com homepage"
               >
-                <span className="text-default-600">© {new Date().getFullYear()}</span>
+                <span className="text-default-600">
+                  © {new Date().getFullYear()}
+                </span>
                 <p className="text-primary">Develop By Ouen Tola</p>
               </Link>
             </footer>
