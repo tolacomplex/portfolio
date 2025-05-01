@@ -3,6 +3,7 @@ import { Link } from "@heroui/link";
 import { GithubIcon, DownloadIcon, LinkendInIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
+import { Card, CardBody } from "@heroui/card";
 import * as motion from "framer-motion/client";
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
                 Ouen Tola
               </motion.h1>
             </div>
-            <div className="font-inter text-default-600 tracking-[1.5px] leading-8 text-center lg:w-[600px] md:w-[800px] sm:w-[650px]">
+            <div className="font-poppins text-default-600 tracking-[1.5px] leading-8 text-center lg:w-[600px] md:w-[800px] sm:w-[650px]">
               <p>
                 I really excited that I have already to be yours. It's a first
                 times I start joining in this career. so that, I can support
@@ -59,7 +60,7 @@ export default function Home() {
                 >
                   <Button
                     as={Link}
-                    href="https://www.canva.com/design/DAGJ6FamxNY/f94kzlQLPDLs-QIq0weRRw/edit"
+                    href={siteConfig.links.canva}
                     target="blink"
                     className="bg-gradient-to-l from-[#9DBF12] to-[#1A6F45] relative text-white"
                     endContent={<DownloadIcon className="relative top-[4px]" />}
@@ -78,7 +79,7 @@ export default function Home() {
                 >
                   <div>
                     <Link
-                      href="https://github.com/tolacomplex"
+                      href={siteConfig.links.github}
                       color="foreground"
                       target="blink"
                     >
@@ -88,7 +89,7 @@ export default function Home() {
                   {/* LinkendIn icon and link to another page of LinkedIn profile user */}
                   <div>
                     <Link
-                      href="https://www.linkedin.com/in/ouen-tola-292041339/"
+                      href={siteConfig.links.linkendin}
                       color="foreground"
                       target="blink"
                     >
@@ -115,6 +116,33 @@ export default function Home() {
                 className="object-cover lg:relative lg:left-[120px] lg:top-[5px] md:relative md:left-[160px] md:top-[4px] sm:relative sm:left-[160px] relative left-[20px] top-[8px] "
               />
             </motion.div>
+          </div>
+        </div>
+      </section>
+      <section className="my-[100px]">
+        <div>
+          <div className="flex flex-col justify-center items-center">
+            <motion.h1
+              initial={{ y: 200 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 2, ease: "easeIn" }}
+              className="text-[40px] text-primary font-bold uppercase my-3 font-inter"
+            >
+              Profile
+            </motion.h1>
+            <motion.p
+              initial={{ x: 200 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 2, ease: "easeIn" }}
+              className="text-[18px] font-poppins "
+            >
+              I'm a student{" "}
+              <span className="text-primary font-poppins hover:underline">
+                Softwate Development.
+              </span>{" "}
+              I excited in my first journey with the new experience in the job
+              opportunity.
+            </motion.p>
           </div>
         </div>
       </section>

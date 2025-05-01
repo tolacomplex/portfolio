@@ -29,5 +29,7 @@ export const siteConfig = {
     github: "https://github.com/tolacomplex",
     facebook: "https://web.facebook.com/Ouentola",
     telegram: "@tola_ouen",
+    linkendin: "https://www.linkedin.com/in/ouen-tola-292041339/",
+    canva: "https://www.canva.com/design/DAGJ6FamxNY/f94kzlQLPDLs-QIq0weRRw/edit",
   },
 };
