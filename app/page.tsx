@@ -9,11 +9,11 @@ import * as motion from "framer-motion/client";
 export default function Home() {
   return (
     // Profile detail about my self
-    <main className="mt-[60px]">
+    <main className="mr-[30px] ml-[30px] mt-[100px] mb-[200px]">
       {/* One section detail about profile and personal */}
       <section>
         {/* Element include this page */}
-        <div className="lg:flex lg:flex-row lg:justify-around md:flex md:flex-col md:justify-around sm:flex sm:flex-col sm:justify-around flex flex-col justify-around gap-4 ">
+        <div className="lg:flex lg:flex-row lg:justify-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justify-center items-center md:gap-[200px] sm:gap-[200px] gap-[200px]">
           {/* Element side page profile */}
           <div className="lg:flex lg:flex-col  md:flex md:flex-col sm:w-[700px] lg:w-[1000px]">
             {/* Element object */}
@@ -36,8 +36,8 @@ export default function Home() {
                 Hello, I'm
               </motion.h1>
               <motion.h1
-                initial={{ x: 500 }}
-                animate={{ x: 0 }}
+                initial={{ y: 500 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 2, ease: "easeIn" }}
                 className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold text-[#B7EE38] tracking-[5px] lg:relative lg:left-[160px] lg:text-start md:text-center sm:text-center text-center"
               >
@@ -46,11 +46,15 @@ export default function Home() {
               </motion.h1>
             </div>
             <div className="font-poppins text-default-600 tracking-[1.5px] leading-8 text-center lg:w-[600px] md:w-[800px] sm:w-[650px]">
-              <p>
+              <motion.p
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
+                transition={{ visualDuration: 2, ease: "backOut" }}
+              >
                 I really excited that I have already to be yours. It's a first
                 times I start joining in this career. so that, I can support
                 their job.{" "}
-              </p>
+              </motion.p>
               {/* Element button item  */}
               <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-row md:justify-center md:items-center sm:flex sm:flex-row sm:justify-center sm:items-center flex flex-col justify-center items-center mt-[30px] gap-[30px] sm:gap-[100px] md:gap-[100px] lg:gap-[100px] ">
                 <motion.div
@@ -63,10 +67,12 @@ export default function Home() {
                     href={siteConfig.links.canva}
                     target="blink"
                     className="bg-gradient-to-l from-[#9DBF12] to-[#1A6F45] relative text-white"
-                    endContent={<DownloadIcon className="relative top-[4px]" />}
+                    startContent={
+                      <DownloadIcon className="relative top-[4px]" />
+                    }
                     radius="full"
                   >
-                    Check CV
+                    Download CV
                   </Button>
                 </motion.div>
                 {/* Element Icon Github and LinkedIn detail */}
@@ -101,51 +107,26 @@ export default function Home() {
             </div>
           </div>
           {/* Element image  */}
-          <div className="lg:w-[800px] lg:h-[310px] md:w-[600px] md:h-[310px] sm:w-[600px] h-[320px] md:mt-4 sm:mt-5 mt-8 bg-gradient-to-l from-[#D4BD43] to-[#71E855] rounded-full lg:relative lg:right-[50px] md:relative md:right-[-100px] sm:relative sm:right-[-30px] max-w-full">
+          <div className="lg:w-[800px] md:w-[500px] sm:w-[400px] w-[400px] lg:h-[360px] md:h-[460px]  border-1 border-black rounded-full lg:relative lg:top-[100px] lg:left-[-100px] bg-black md:relative md:left-[70px] ">
             <motion.div
-              initial={{ x: -120 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 2, ease: "easeIn" }}
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 5, ease: "backOut" }}
             >
               <Image
-                src="ouentola.jpg"
+                src="ouentola-bg.png"
                 alt="Cover profile"
                 width={"300px"}
-                height={"300px"}
+                height={"400px"}
                 radius="full"
-                className="object-cover lg:relative lg:left-[120px] lg:top-[5px] md:relative md:left-[160px] md:top-[4px] sm:relative sm:left-[160px] relative left-[20px] top-[8px] "
+                className="object-cover lg:relative lg:top-[-150px] lg:left-[30px] md:relative md:top-[-150px] md:right-[-90px] sm:relative sm:top-[-150px] sm:right-[-50px] retative top-[-150px] right-[-50px]"
               />
             </motion.div>
           </div>
         </div>
       </section>
-      <section className="my-[100px]">
-        <div>
-          <div className="flex flex-col justify-center items-center">
-            <motion.h1
-              initial={{ y: 200 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, ease: "easeIn" }}
-              className="text-[40px] text-primary font-bold uppercase my-3 font-inter"
-            >
-              Profile
-            </motion.h1>
-            <motion.p
-              initial={{ x: 200 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 2, ease: "easeIn" }}
-              className="text-[18px] font-poppins "
-            >
-              I'm a student{" "}
-              <span className="text-primary font-poppins hover:underline">
-                Softwate Development.
-              </span>{" "}
-              I excited in my first journey with the new experience in the job
-              opportunity.
-            </motion.p>
-          </div>
-        </div>
-      </section>
+      {/* Page detail personal background  */}
+      <section></section>
     </main>
   );
 }
