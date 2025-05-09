@@ -20,7 +20,7 @@ export default function AboutPage() {
             initial={{ x: 100 }}
             animate={{ x: 0 }}
             transition={{ duration: 2, ease: "backOut" }}
-            className="text-[20px] text-center text-default-400 font-bold font-poppins border-1 dark:border-white rounded-sm "
+            className="text-[20px] text-center text-default-400 font-bold font-poppins"
           >
             {text_1}
           </motion.p>
@@ -32,9 +32,28 @@ export default function AboutPage() {
           >
             {text_2}
           </motion.p>
+          {/* View IDE and browser that support programming running on web sever */}
+          {/* chrome  */}
+          {/* Safari */}
+          {/* Visual Studio Code  */}
+          {/* Jetbrain */}
+          <div className="border-1 flex flex-row w-[250px] h-[40px] rounded-full justify-center items-center lg:relative lg:left-[180px] md:relative md:left-[230px] sm:relative sm:left-[170px] relative left-[30px]">
+            <div>
+              <Image src="vscode.png" alt="vscode" title="vscode" className="w-[50px] p-[5px]" />
+            </div>
+            <div>
+              <Image src="jetbrain.jpeg" alt="jetbrain"  title="Jetbrain" className="w-[50px] p-[13px]" />
+            </div>
+            <div>
+              <Image src="chrome.png" alt="chrome"  title="Chrome" className="w-[50px] p-[10px]" />
+            </div>
+            <div>
+              <Image src="safari.png" alt="safari"  title="Safari" className="w-[50px]" />
+            </div>
+          </div>
         </div>
         {/* Element image cover detail imformation */}
-        <div className="lg:w-[1000px] border-1 dark:border-white rounded-lg p-[80px]">
+        <div className="lg:w-[1000px] border-1 dark:border-white rounded-lg lg:p-[80px] md:p[80px] ms:p-[80px] p-[40px]">
           {/* circle image detail about language and frame work programming  */}
           <motion.div
             animate={{ rotate: 360 }}

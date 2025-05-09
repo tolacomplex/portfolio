@@ -52,8 +52,8 @@ export default function Home() {
                 transition={{ visualDuration: 2, ease: "backOut" }}
               >
                 I really excited that I have already to be yours. It's a first
-                times I start joining in this career. so that, I can support
-                their job.{" "}
+                times I start joining in this career. so that, I can hope support
+                the job.{" "}
               </motion.p>
               {/* Element button item  */}
               <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-row md:justify-center md:items-center sm:flex sm:flex-row sm:justify-center sm:items-center flex flex-col justify-center items-center mt-[30px] gap-[30px] sm:gap-[100px] md:gap-[100px] lg:gap-[100px] ">
