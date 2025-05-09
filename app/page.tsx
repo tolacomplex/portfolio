@@ -21,7 +21,7 @@ export default function Home() {
               <motion.p
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
-                transition={{ duration: 2, ease: "easeInOut" }}
+                transition={{ duration: 1, ease: "easeInOut" }}
                 className="font-inter text-default-500 leading-5 text-[18px] lg:relative lg:left-[180px] md:relative md:left-[0] tracking-[1px] lg:text-start md:text-center sm:text-center text-center"
               >
                 Software Developer
@@ -30,7 +30,7 @@ export default function Home() {
               <motion.h1
                 initial={{ x: -350 }}
                 animate={{ x: 0 }}
-                transition={{ duration: 2, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "easeIn" }}
                 className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold tracking-[5px] lg:text-start md:text-center sm:text-center text-center"
               >
                 Hello, I'm
@@ -38,7 +38,7 @@ export default function Home() {
               <motion.h1
                 initial={{ y: 500 }}
                 animate={{ y: 0 }}
-                transition={{ duration: 2, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "easeIn" }}
                 className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold text-[#B7EE38] tracking-[5px] lg:relative lg:left-[160px] lg:text-start md:text-center sm:text-center text-center"
               >
                 {" "}
@@ -49,7 +49,7 @@ export default function Home() {
               <motion.p
                 initial={{ y: 30 }}
                 animate={{ y: 0 }}
-                transition={{ visualDuration: 2, ease: "backOut" }}
+                transition={{ duration: 1, ease: "backOut" }}
               >
                 I really excited that I have already to be yours. It's a first
                 times I start joining in this career. so that, I can hope support
@@ -60,7 +60,7 @@ export default function Home() {
                 <motion.div
                   initial={{ x: -330 }}
                   animate={{ x: 0 }}
-                  transition={{ duration: 2, ease: "easeIn" }}
+                  transition={{ duration: 1, ease: "backOut" }}
                 >
                   <Button
                     as={Link}
@@ -80,7 +80,7 @@ export default function Home() {
                 <motion.div
                   initial={{ x: -500 }}
                   animate={{ x: 0 }}
-                  transition={{ duration: 2, ease: "easeIn" }}
+                  transition={{ duration: 1, ease: "backOut" }}
                   className="flex flex-row gap-5"
                 >
                   <div>
@@ -111,7 +111,7 @@ export default function Home() {
             <motion.div
               initial={{ y: 100 }}
               animate={{ y: 0 }}
-              transition={{ duration: 5, ease: "backOut" }}
+              transition={{ duration: 2, ease: "backOut" }}
             >
               <Image
                 src="ouentola-bg.png"
