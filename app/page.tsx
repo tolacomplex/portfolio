@@ -64,7 +64,7 @@ export default function Home() {
                 >
                   <Button
                     as={Link}
-                    href={siteConfig.links.canva}
+                    href={"/downloads"}
                     target="blink"
                     className="bg-gradient-to-l from-[#9DBF12] to-[#1A6F45] relative text-white"
                     startContent={
