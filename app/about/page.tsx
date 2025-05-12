@@ -9,31 +9,33 @@ export default function AboutPage() {
       <section className="my-[50px]">
         <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justify-center items-center gap-[100px]">
           {/* Element cover text detail personal information */}
-          <div className="flex flex-col gap-[20px]">
-            <motion.h1
-              initial={{ y: -100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, ease: "backOut" }}
-              className="text-purple-500 text-center capitalize font-poppins font-bold lg:text-[40px] md:text-[40px] sm:text-[30px] text-[20px]"
-            >
-              I'm modern web Development
-            </motion.h1>
-            <motion.p
-              initial={{ x: 100 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 2, ease: "backOut" }}
-              className="text-[20px] text-center text-default-400 font-bold font-poppins"
-            >
-              {text_1}
-            </motion.p>
-            <motion.p
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, ease: "backOut" }}
-              className="font-poppins text-center leading-[30px]"
-            >
-              {text_2}
-            </motion.p>
+          <div className="flex flex-col justify-center items-center gap-[20px]">
+            <div>
+              <motion.h1
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 2, ease: "backOut" }}
+                className="text-purple-500 text-center capitalize font-poppins font-bold lg:text-[40px] md:text-[40px] sm:text-[30px] text-[20px]"
+              >
+                I'm modern web Development
+              </motion.h1>
+              <motion.p
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 2, ease: "backOut" }}
+                className="text-[20px] text-center text-default-400 font-bold font-poppins"
+              >
+                {text_1}
+              </motion.p>
+              <motion.p
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 2, ease: "backOut" }}
+                className="font-poppins text-center leading-[30px]"
+              >
+                {text_2}
+              </motion.p>
+            </div>
             {/* View IDE and browser that support programming running on web sever */}
             {/* chrome  */}
             {/* Safari */}
@@ -43,7 +45,7 @@ export default function AboutPage() {
               initial={{ x: -100 }}
               animate={{ x: 0 }}
               transition={{ duration: 1, ease: "backOut" }}
-              className="border-1 flex flex-row w-[250px] h-[40px] rounded-full justify-center items-center lg:relative lg:left-[180px] md:relative md:left-[230px] sm:relative sm:left-[170px] relative left-[30px]"
+              className="border-1 flex flex-row w-[250px] h-[40px] rounded-full justify-center items-center "
             >
               <motion.div
                 initial={{ x: 100 }}
