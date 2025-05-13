@@ -1,5 +1,6 @@
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
+import { Link } from "@heroui/link";
 import * as motion from "framer-motion/client";
 export default function SkillPage() {
   const text_program: string = `I have been learning the popular programming language and programming for web development that suppport the business and managements system. `;
@@ -8,23 +9,40 @@ export default function SkillPage() {
       <section className="my-[50]">
         <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justify-center items-center gap-[100px]">
           {/* Skills programming language get implement */}
-          <div className="flex flex-col gap-[30px]">
-            <motion.h1
-              initial={{ y: -100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, ease: "backOut" }}
-              className="lg:text-[50px] md:text-[50px] sm:text-[50px] text-[40px] font-title font-bold text-center text-[#9EDF13]"
+          <div className="flex flex-col justify-center items-center gap-[30px]">
+            <div className="flex flex-col gap-[30px]">
+              <motion.h1
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 2, ease: "backOut" }}
+                className="lg:text-[50px] md:text-[50px] sm:text-[50px] text-[40px] font-title font-bold text-center text-[#9EDF13]"
+              >
+                Development Skills
+              </motion.h1>
+              <motion.p
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 2, ease: "backOut" }}
+                className="font-poppins text-center leading-[30px] "
+              >
+                {text_program}
+              </motion.p>
+            </div>
+            <motion.div
+              initial={{ x: 100 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1, ease: "backOut" }}
             >
-              Development Skills
-            </motion.h1>
-            <motion.p
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, ease: "backOut" }}
-              className="font-poppins text-center leading-[30px] "
-            >
-              {text_program}
-            </motion.p>
+              <Button
+                showAnchorIcon
+                variant="shadow"
+                as={Link}
+                href="/project"
+                className="bg-gradient-to-tl from-[#B0CA3E] to-[#4F6DDF]"
+              >
+                Get Started
+              </Button>
+            </motion.div>
           </div>
           <div className="lg:w-[1000px] w-[400px]">
             <Image src="programming-im.png" />

@@ -25,11 +25,10 @@ export const Navbar = () => {
     { label: "Project", href: "/project" },
   ];
   return (
-    <header>
-      <NavbarPortfolio
-        onMenuOpenChange={setIsOpenMenu}
-        className="fixed"
-      >
+    <header
+     
+    >
+      <NavbarPortfolio onMenuOpenChange={setIsOpenMenu} className="fixed">
         {/* Mobile menu toggle */}
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle
