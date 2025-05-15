@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { IconSvgProps } from "@/types";
 import { monitorEventLoopDelay } from "node:perf_hooks";
+import { svg } from "framer-motion/dist/client";
 
 export const Profile: React.FC<IconSvgProps> = ({
   size = 36,
@@ -182,31 +183,21 @@ export const DownloadIcon = ({
     />
   </svg>
 );
-
-export const SearchIcon = (props: IconSvgProps) => (
+export const VercelIcon = ({
+  size = 20,
+  width,
+  height,
+  ...props
+}: IconSvgProps) => (
   <svg
     aria-hidden="true"
-    fill="none"
     focusable="false"
-    height="1em"
+    height={size || height}
     role="presentation"
     viewBox="0 0 24 24"
-    width="1em"
+    width={size || width}
     {...props}
   >
-    <path
-      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    />
-    <path
-      d="M22 22L20 20"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    />
+    <path d="M24 22.525H0l12-21.05 12 21.05z" fill="currentColor" />
   </svg>
 );

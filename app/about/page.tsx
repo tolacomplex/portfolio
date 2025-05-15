@@ -5,8 +5,8 @@ export default function AboutPage() {
   const text_1: string = `Developer Handsome`;
   const text_2: string = `I'm every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.`;
   return (
-    <main className="my-[50px]">
-      <section className="my-[50px]">
+    <main className="mb-[30px]">
+      <section>
         <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justify-center items-center gap-[100px]">
           {/* Element cover text detail personal information */}
           <div className="flex flex-col justify-center items-center gap-[20px]">

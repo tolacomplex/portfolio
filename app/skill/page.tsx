@@ -75,105 +75,85 @@ export default function SkillPage() {
       <section>
         <div className="lg:grid lg:grid-cols-4 gap-[20px] lg:justify-enter md:grid md:grid-cols-3 md:justify-center sm:grid sm:grid-cols-3 sm:justify-center grid grid-cols-2 justify-center">
           {/* View course C  programming */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] rounded-lg flex flex-col justify-center items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] rounded-lg flex flex-col justify-center items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="c.png"
                 alt="C Program"
                 title="C Program"
                 className="w-[90px] "
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 C Programming
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* View course C++  programming */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px]  hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px]  hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="cpp.png"
                 alt="Cpp"
                 title="C++"
                 className="w-[90px] p-[5px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 C++ Programming
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* View course Python  programming */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px]  hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px]  hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="python.png"
                 alt="python"
                 title="Python Program"
                 className="w-[100px] p-[10px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Python
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* View course Java  programming */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="java.jpeg"
                 alt="java"
                 title="Java Program"
                 className="w-[100px] p-[10px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Java
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* View course javascript programming */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="javascript.jpeg"
                 alt="javascript"
                 title="Javascript Program"
                 className="w-[100px] p-[15px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 JavaScript
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
       {/* Web Programming description */}
@@ -200,92 +180,72 @@ export default function SkillPage() {
       <section className="my-[50px]">
         <div className="lg:grid lg:grid-cols-4 gap-[20px] lg:justify-enter md:grid md:grid-cols-3 md:justify-center sm:grid sm:grid-cols-3 sm:justify-center grid grid-cols-2 justify-center ">
           {/* Web programming Html css javascript */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="html-css-js.png"
                 alt="web program"
                 title="HTML CSS Javascript"
                 className="w-[100px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Html+Css+Js
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming javascript + React framework */}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="react.png"
                 alt="react"
                 title="React Js"
                 className="w-[100px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 React
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming javascript + vite framwork*/}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="vite.png"
                 alt="vite"
                 title="Vite"
                 className="w-[100px] p-[15px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Vite
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming javascript + Next js framework*/}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="nextjs.png"
                 alt="next"
                 title="Next Js"
                 className="w-[100px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Next Js
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming React + Typescript framework*/}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 radius="lg"
                 src="typscript.jpeg"
@@ -293,73 +253,61 @@ export default function SkillPage() {
                 title="Typescript"
                 className="w-[100px] p-[15px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Typescript
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming tailwind css framework*/}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="tailwind.png"
                 alt="tailwind"
                 title="TailwindCss"
                 className="w-[100px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Tailwind
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming Javascript + node framework*/}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="node.png"
                 alt="node"
                 title="Node Js"
                 className="w-[100px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Node Js
               </Button>
             </div>
-          </motion.div>
+          </div>
           {/* Web programming tailwind css framework*/}
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]"
-          >
-            <div>
+          <div className="border-1 border-[#E826B4] p-[20px] rounded-lg flex flex-col items-center gap-[20px] hover:bg-gradient-to-tr from-[#48F5BE] to-[#1281EB]">
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.2 }}>
               <Image
                 src="github.jpeg"
                 alt="github"
                 title="Github"
                 className="w-[100px] p-[15px] flex flex-col items-center gap-[20px]"
               />
-            </div>
+            </motion.div>
             <div>
               <Button className="text-poppins text-white bg-gradient-to-br from-[#12EBC3] to-[#DC16E8] rounded-md">
                 Github
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </main>
