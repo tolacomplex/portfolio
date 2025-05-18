@@ -3,10 +3,11 @@ import { Link } from "@heroui/link";
 import { GithubIcon, DownloadIcon, LinkendInIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
-import { Card, CardBody } from "@heroui/card";
+import { Card, CardBody, } from "@heroui/card";
 import * as motion from "framer-motion/client";
 
 export default function Home() {
+  const title_1: string = `I really excited that I have already to be yours. It's a first times I start joining in this career. so that, I can hope support the job.`;
   return (
     // Profile detail about my self
     <main className="mr-[30px] ml-[30px] mt-[100px] mb-[200px]">
@@ -31,9 +32,9 @@ export default function Home() {
                 initial={{ x: -350 }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1, ease: "easeIn" }}
-                className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold tracking-[5px] lg:text-start md:text-center sm:text-center text-center"
+                className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold tracking-[5px] lg:text-start md:text-center sm:text-center text-center text-slate-900 dark:text-white"
               >
-                Hello, I'm
+                Hello I'm
               </motion.h1>
               <motion.h1
                 initial={{ y: 500 }}
@@ -41,7 +42,6 @@ export default function Home() {
                 transition={{ duration: 1, ease: "easeIn" }}
                 className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold text-[#B7EE38] tracking-[5px] lg:relative lg:left-[160px] lg:text-start md:text-center sm:text-center text-center"
               >
-                {" "}
                 Ouen Tola
               </motion.h1>
             </div>
@@ -51,9 +51,7 @@ export default function Home() {
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: "backOut" }}
               >
-                I really excited that I have already to be yours. It's a first
-                times I start joining in this career. so that, I can hope support
-                the job.{" "}
+                {title_1}
               </motion.p>
               {/* Element button item  */}
               <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-row md:justify-center md:items-center sm:flex sm:flex-row sm:justify-center sm:items-center flex flex-col justify-center items-center mt-[30px] gap-[30px] sm:gap-[100px] md:gap-[100px] lg:gap-[100px] ">
@@ -126,7 +124,11 @@ export default function Home() {
         </div>
       </section>
       {/* Page detail personal background  */}
-      <section></section>
+      <section>
+        <div>
+          <div></div>
+        </div>
+      </section>
     </main>
   );
 }
