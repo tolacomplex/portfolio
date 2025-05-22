@@ -11,7 +11,7 @@ import {
 import { Link } from "@heroui/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, FacebookIcon, TelegramIcon } from "@/components/icons";
+import { GithubIcon, FacebookIcon, DiscordIcon } from "@/components/icons";
 import { Avatar } from "@heroui/avatar";
 import React from "react";
 import { usePathname } from "next/navigation";
@@ -82,8 +82,8 @@ export const Navbar = () => {
             <Link isExternal href={siteConfig.links.facebook} title="Facebook">
               <FacebookIcon className="text-default-500" />
             </Link>
-            <Link isExternal href={siteConfig.links.telegram} title="Telegram">
-              <TelegramIcon className="text-default-500 relative top-[2px]" />
+            <Link isExternal href={siteConfig.links.discord} title="Telegram">
+              <DiscordIcon className="text-default-500" />
             </Link>
             <ThemeSwitch />
           </NavbarItem>

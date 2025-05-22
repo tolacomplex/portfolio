@@ -28,8 +28,8 @@ export const siteConfig = {
   links: {
     github: "https://github.com/tolacomplex",
     facebook: "https://web.facebook.com/Ouentola",
-    telegram: "@tola_ouen",
     linkendin: "https://www.linkedin.com/in/ouen-tola-292041339/",
-    vercel: "https://vercel.com/tolacomplexs-projects/front-end-dev/deployments"
+    vercel:"https://vercel.com/tolacomplexs-projects/front-end-dev/deployments",
+    discord: "https://discord.com/channels/@me",
   },
 };

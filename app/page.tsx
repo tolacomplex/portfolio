@@ -3,9 +3,8 @@ import { Link } from "@heroui/link";
 import { GithubIcon, DownloadIcon, LinkendInIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
-import { Card, CardBody, } from "@heroui/card";
+import { Card, CardBody } from "@heroui/card";
 import * as motion from "framer-motion/client";
-
 export default function Home() {
   const title_1: string = `I really excited that I have already to be yours. It's a first times I start joining in this career. so that, I can hope support the job.`;
   return (
@@ -125,9 +124,7 @@ export default function Home() {
       </section>
       {/* Page detail personal background  */}
       <section>
-        <div>
-          <div></div>
-        </div>
+        <div></div>
       </section>
     </main>
   );
