@@ -1,9 +1,5 @@
 import * as React from "react";
-
 import { IconSvgProps } from "@/types";
-import { monitorEventLoopDelay } from "node:perf_hooks";
-import { svg } from "framer-motion/dist/client";
-
 export const Profile: React.FC<IconSvgProps> = ({
   size = 36,
   width,
