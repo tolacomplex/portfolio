@@ -9,6 +9,7 @@ import {
   NavbarMenu,
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
+import { Dropdown } from "@heroui/dropdown";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, FacebookIcon, DiscordIcon } from "@/components/icons";
@@ -25,17 +26,14 @@ export const Navbar = () => {
     { label: "Project", href: "/project" },
   ];
   return (
-    <header
-     
-    >
+    <header>
       <NavbarPortfolio onMenuOpenChange={setIsOpenMenu} className="fixed">
         {/* Mobile menu toggle */}
-        <NavbarContent className="sm:hidden" justify="start">
-          <NavbarMenuToggle
-            aria-label={isOpenMenu ? "Close menu" : "Open menu"}
-          />
-        </NavbarContent>
-
+          <NavbarContent className="sm:hidden" justify="start">
+            <NavbarMenuToggle
+              aria-label={isOpenMenu ? "Close menu" : "Open menu"}
+            />
+          </NavbarContent>
         {/* Profile Avatar */}
         <NavbarBrand className="flex justify-start relative right-[10px] sm:right-[200px] md:right-[280px] lg:right-[350px]">
           <Link href="/">
