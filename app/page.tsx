@@ -151,6 +151,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.freecodecamp}
+                    target="blink"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
@@ -196,6 +197,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.github}
+                    target="blink"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
@@ -241,6 +243,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.notion}
+                    target="blink"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
@@ -266,6 +269,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.heroui}
+                    target="blink"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
