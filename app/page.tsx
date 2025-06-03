@@ -5,13 +5,14 @@ import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
 import { Card, CardBody } from "@heroui/card";
 import * as motion from "framer-motion/client";
+import { SiteConfig } from "@/config/site";
 export default function Home() {
   const title_1: string = `I really excited that I have already to be yours. It's a first times I start joining in this career. so that, I can hope support the job.`;
   return (
     // Profile detail about my self
     <main className="mr-[30px] ml-[30px] mt-[100px] mb-[200px]">
       {/* One section detail about profile and personal */}
-      <section>
+      <section className="mb-[120px]">
         {/* Element include this page */}
         <div className="lg:flex lg:flex-row lg:justify-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justify-center items-center md:gap-[200px] sm:gap-[200px] gap-[200px]">
           {/* Element side page profile */}
@@ -123,8 +124,162 @@ export default function Home() {
         </div>
       </section>
       {/* Page detail personal background  */}
+      <section className="my-[100px] bg-[url/website-programmer.png]">
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
+            <small className="text-default-400 font-bold text-[15px] font-poppins capitalize">
+              power of development
+            </small>
+            <h1 className="text-secondary font-inter font-bold lg:text-[40px] md:text-[35px] ms:text-[30px] text-[20px] underline capitalize">
+              Resource development project guides
+            </h1>
+          </div>
+        </div>
+      </section>
+      {/* Card itemsdkispl */}
       <section>
-        <div></div>
+        <div className="lg:grid lg:grid-cols-3 lg:gap-[20px] lg:items-center md:grid md:grid-cols1  md:gap-[20px] sm:grid sm:grid-cols-1 sm:gap-[20px] grid grid-cols-1 gap-[10px]">
+          {/* Firs card items */}
+          <div className="border rounded-xl">
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-[10px]">
+                  <Image
+                    className="w-[40p] h-[40px] object-cover"
+                    alt="freecodecamp"
+                    src="dev-freecode.png"
+                  />
+                  <Link
+                    href={siteConfig.links.freecodecamp}
+                    className="text-default-900"
+                  >
+                    <h1 className="font-bold font-poppins capitalize text-[20px]">
+                      FreeCodeCamp
+                    </h1>
+                  </Link>
+                  <h1 className="text-default-400 font-poppins capitalize text-[15px]">
+                    Learn any course from there
+                  </h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+          {/* second card items */}
+          <div className="border rounded-xl">
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-[10px]">
+                  <Image
+                    className="w-[40p] h-[40px] object-cover"
+                    alt="ai"
+                    src="dev-icon.png"
+                  />
+                  <h1 className="font-bold font-poppins capitalize text-[20px]">
+                    Ai
+                  </h1>
+                  <h1 className="text-default-400 font-poppins capitalize text-[15px]">
+                    Artificial intelligent
+                  </h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+          {/* third card items */}
+          <div className="border rounded-xl">
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-[10px]">
+                  <Image
+                    className="w-[40p] h-[40px] object-cover"
+                    alt="Programmer"
+                    src="dev-programmer.png"
+                  />
+                  <Link
+                    href={siteConfig.links.github}
+                    className="text-default-900"
+                  >
+                    <h1 className="font-bold font-poppins capitalize text-[20px]">
+                      Code
+                    </h1>
+                  </Link>
+                  <h1 className="text-default-400 font-poppins capitalize text-[15px]">
+                    Learn source of programming languages
+                  </h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+          {/* four card items */}
+          <div className="border rounded-xl">
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-[10px]">
+                  <Image
+                    className="w-[40p] h-[40px] object-cover"
+                    alt="website"
+                    src="dev-website.png"
+                  />
+                  <h1 className="font-bold font-poppins capitalize text-[20px]">
+                    Website
+                  </h1>
+                  <h1 className="text-default-400 font-poppins capitalize text-[15px]">
+                    Learn from some popular website
+                  </h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+          {/* five card items */}
+          <div className="border rounded-xl">
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-[10px]">
+                  <Image
+                    className="w-[40p] h-[40px] object-cover"
+                    alt="roadmap"
+                    src="dev-roadmap.png"
+                  />
+                  <Link
+                    href={siteConfig.links.notion}
+                    className="text-default-900"
+                  >
+                    <h1 className="font-bold font-poppins capitalize text-[20px]">
+                      roadmap
+                    </h1>
+                  </Link>
+                  <h1 className="text-default-400 font-poppins capitalize text-[15px]">
+                    plan to learn code
+                  </h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+          {/* six card items */}
+          <div className="border rounded-xl">
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-[10px]">
+                  <Image
+                    className="w-[40p] h-[40px] object-cover"
+                    alt="tools"
+                    src="dev-tool.png"
+                  />
+                  <Link
+                    href={siteConfig.links.heroui}
+                    className="text-default-900"
+                  >
+                    <h1 className="font-bold font-poppins capitalize text-[20px]">
+                      tools
+                    </h1>
+                  </Link>
+                  <h1 className="text-default-400 font-poppins capitalize text-[15px]">
+                    support my idea
+                  </h1>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
       </section>
     </main>
   );
