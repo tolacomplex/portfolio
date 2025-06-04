@@ -207,6 +207,16 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <section className="my-[100px]">
+        <div className="flex flex-col justify-center items-center gap-[10px]">
+          <div>
+            <h1 className="capitalize lg:text-[40px] md:text-[30px] sm:text-[20px] text-[20px] text-[#9d75db] font-bold font-poppins ">project status</h1>
+          </div>
+          <div className="border border-default-900 rounded-2xl p-[5px] bg-default-900">
+            <Image src="picture.jpg" alt="github image"/>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

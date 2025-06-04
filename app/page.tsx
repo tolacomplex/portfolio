@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { GithubIcon, DownloadIcon, LinkendInIcon } from "@/components/icons";
@@ -5,9 +6,18 @@ import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
 import { Card, CardBody } from "@heroui/card";
 import * as motion from "framer-motion/client";
-import { SiteConfig } from "@/config/site";
+import { CircularProgress } from "@heroui/progress";
+import * as React from "react";
 export default function Home() {
   const title_1: string = `I really excited that I have already to be yours. It's a first times I start joining in this career. so that, I can hope support the job.`;
+  const [value, setValue] = React.useState(0);
+  const data_list: number[] = [50, 70, 90, 100];
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setValue((v) => (v >= 100 ? 0 : v + 10));
+    }, 500);
+    return () => clearInterval(interval);
+  }, []);
   return (
     // Profile detail about my self
     <main className="mr-[30px] ml-[30px] mt-[100px] mb-[200px]">
@@ -124,7 +134,7 @@ export default function Home() {
         </div>
       </section>
       {/* Page detail personal background  */}
-      <section className="my-[100px] bg-[url/website-programmer.png]">
+      <section className="mt-[100px] mb-[50px]">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center">
             <small className="text-default-400 font-bold text-[15px] font-poppins capitalize">
@@ -134,6 +144,21 @@ export default function Home() {
               Resource development project guides
             </h1>
           </div>
+        </div>
+      </section>
+      {/* page progress data counting */}
+      <section className="mb-[50px]">
+        <div className="flex flex-row justify-center items-center gap-[10px]">
+          {data_list.map((data) => (
+            <div key={data} className="w-[200px]">
+              <CircularProgress
+                color="warning"
+                showValueLabel={true}
+                value={value}
+                aria-label="Loading..."
+              />
+            </div>
+          ))}
         </div>
       </section>
       {/* Card itemsdkispl */}
@@ -151,7 +176,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.freecodecamp}
-                    target="blink"
+                    target="blank"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
@@ -175,9 +200,11 @@ export default function Home() {
                     alt="ai"
                     src="dev-icon.png"
                   />
-                  <h1 className="font-bold font-poppins capitalize text-[20px]">
-                    Ai
-                  </h1>
+                  <Link className="text-defalt-900" target="blank" href="#">
+                    <h1 className="font-bold font-poppins capitalize text-[20px]">
+                      Ai
+                    </h1>
+                  </Link>
                   <h1 className="text-default-400 font-poppins capitalize text-[15px]">
                     Artificial intelligent
                   </h1>
@@ -197,7 +224,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.github}
-                    target="blink"
+                    target="blank"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
@@ -221,9 +248,11 @@ export default function Home() {
                     alt="website"
                     src="dev-website.png"
                   />
-                  <h1 className="font-bold font-poppins capitalize text-[20px]">
-                    Website
-                  </h1>
+                  <Link className="text-default-900" target="blank" href="#">
+                    <h1 className="font-bold font-poppins capitalize text-[20px]">
+                      Website
+                    </h1>
+                  </Link>
                   <h1 className="text-default-400 font-poppins capitalize text-[15px]">
                     Learn from some popular website
                   </h1>
@@ -243,7 +272,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.notion}
-                    target="blink"
+                    target="blank"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
@@ -269,7 +298,7 @@ export default function Home() {
                   />
                   <Link
                     href={siteConfig.links.heroui}
-                    target="blink"
+                    target="blank"
                     className="text-default-900"
                   >
                     <h1 className="font-bold font-poppins capitalize text-[20px]">
