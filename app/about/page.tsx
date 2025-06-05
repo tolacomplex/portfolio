@@ -1,4 +1,5 @@
 import { Image } from "@heroui/image";
+import { Accordion, AccordionItem } from "@heroui/accordion";
 import * as motion from "framer-motion/client";
 import { Link } from "@heroui/link";
 export default function AboutPage() {
@@ -210,11 +211,51 @@ export default function AboutPage() {
       <section className="my-[100px]">
         <div className="flex flex-col justify-center items-center gap-[10px]">
           <div>
-            <h1 className="capitalize lg:text-[40px] md:text-[30px] sm:text-[20px] text-[20px] text-[#9d75db] font-bold font-poppins ">project status</h1>
+            <h1 className="capitalize lg:text-[40px] md:text-[30px] sm:text-[20px] text-[20px] text-[#9d75db] font-bold font-poppins ">
+              project status
+            </h1>
           </div>
-          <div className="border border-default-900 rounded-2xl p-[5px] bg-default-900">
-            <Image src="picture.jpg" alt="github image"/>
+          <div className="border border-default-900 rounded-2xl p-[2px] bg-default-900">
+            <Image src="picture.jpg" alt="github image" />
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="gap-[30px] lg:flex lg:flex-col lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justif-center items-center">
+          <div>
+            <h1 className="capitalize text-success text-[40px] font-bold font-poppins text-center">
+              Open source with tools&framework
+            </h1>
+          </div>
+          <div>
+            <div className="lg:grid lg:grid-cols-4 lg:justify-center lg:items-center md:grid md:grid-cols-4 md:justify-center md:items-center sm:grid sm:grid-cols-2 sm:justify-center sm:items-center grid grid-cols-2 items-center justify-center gap-[10px]">
+              <Image width={"100px"} height={"100px"} src="dev-cloud.png" />
+              <Image
+                width={"100px"}
+                height={"100px"}
+                className="object-cover"
+                src="dev-next.png"
+              />
+              <Image width={"100px"} height={"100px"} src="dev-activity.png" />
+              <Image width={"100px"} height={"100px"} src="dev-product.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-[100px]">
+        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-row md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center gap-[40px]">
+          <div>
+            <h1 className="capitalize text-[#845EC2] text-center font-bold font-poppins ">
+              Study background
+            </h1>
+            <p></p>
+          </div>
+          <div>
+            <h1 className="capitalize text-[#00c9a7] text-center font-bold font-poppins">
+              Experience
+            </h1>
+          </div>
+          <p></p>
         </div>
       </section>
     </main>
