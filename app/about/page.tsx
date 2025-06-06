@@ -1,10 +1,11 @@
 import { Image } from "@heroui/image";
-import { Accordion, AccordionItem } from "@heroui/accordion";
 import * as motion from "framer-motion/client";
 import { Link } from "@heroui/link";
 export default function AboutPage() {
   const text_1: string = `Developer Handsome`;
   const text_2: string = `I'm every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.`;
+  const study_des: string = `This a school that I thought out study general knowlegde:`;
+  const experience: string = `I'm a student, so I have some experience to build my project in this school and learning to solve a problem in real-world.`;
   return (
     <main className="mb-[30px]">
       <section>
@@ -46,7 +47,7 @@ export default function AboutPage() {
               initial={{ x: -100 }}
               animate={{ x: 0 }}
               transition={{ duration: 1, ease: "backOut" }}
-              className="border-1 flex flex-row w-[250px] h-[40px] rounded-full justify-center items-center "
+              className="border-1 border-default-900 flex flex-row w-[250px] h-[40px] rounded-full justify-center items-center "
             >
               <motion.div
                 initial={{ x: 100 }}
@@ -127,12 +128,12 @@ export default function AboutPage() {
             </motion.div>
           </div>
           {/* Element image cover detail imformation */}
-          <div className="lg:w-[1000px] border-1 dark:border-white rounded-lg lg:p-[80px] md:p[80px] ms:p-[80px] p-[40px]">
+          <div className="lg:w-[1000px] border-1 border-default-900 rounded-lg lg:p-[80px] md:p[80px] ms:p-[80px] p-[40px]">
             {/* circle image detail about language and frame work programming  */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 2, ease: "circOut", repeat: Infinity }}
-              className="w-[300px] h-[300px] grid grid-cols-4 gap-[40px] border-1 border-lime-400 rounded-full"
+              className="w-[300px] h-[300px] grid grid-cols-4 gap-[40px] border-1 border-default-900 rounded-full"
             >
               {/* Python programming language image */}
               <Image
@@ -209,19 +210,14 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="my-[100px]">
-        <div className="flex flex-col justify-center items-center gap-[10px]">
-          <div>
-            <h1 className="capitalize lg:text-[40px] md:text-[30px] sm:text-[20px] text-[20px] text-[#9d75db] font-bold font-poppins ">
-              project status
-            </h1>
-          </div>
+        <div>
           <div className="border border-default-900 rounded-2xl p-[2px] bg-default-900">
             <Image src="picture.jpg" alt="github image" />
           </div>
         </div>
       </section>
-      <section>
-        <div className="gap-[30px] lg:flex lg:flex-col lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justif-center items-center">
+      <section className="my-[100px]">
+        <div className="gap-[40px] lg:flex lg:flex-col lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justif-center items-center">
           <div>
             <h1 className="capitalize text-success text-[40px] font-bold font-poppins text-center">
               Open source with tools&framework
@@ -243,19 +239,71 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="my-[100px]">
-        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-row md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center gap-[40px]">
-          <div>
-            <h1 className="capitalize text-[#845EC2] text-center font-bold font-poppins ">
-              Study background
-            </h1>
-            <p></p>
+        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center gap-[40px]">
+          {/* Page study  background detail */}
+          <div className="flex flex-col gap-[40px] lg:w-[700px]">
+            <div className="flex flex-col gap-[20px] justify-center items-center">
+              {/* description about study background */}
+              <h1 className="capitalize text-[#845EC2] text-center font-bold font-poppins text-[35px] ">
+                Education background
+              </h1>
+              {/* Paragraph description */}
+              <p className="text-[18px] text-center font-poppins">
+                {study_des}
+              </p>
+            </div>
+            {/* Image detail about background study */}
+            <div className="text-success capitalize font-poppins">
+              <div className="flex flex-row gap-[10px] justify-center items-center">
+                <Image width={"50px"} src="icons8-brain.png" alt="brain" />
+                <p>Khlong Popork Primary&Secondary School</p>
+              </div>
+              <div className="flex flex-row gap-[10px] justify-center items-center">
+                <Image width={"50px"} src="icons8-book.png" alt="book" />
+                <p>Tuek Phos High School</p>
+              </div>
+              <div className="flex flex-row gap-[10px] justify-center items-center">
+                <Image
+                  width={"50px"}
+                  src="icons8-behavior.png"
+                  alt="behavior"
+                />
+                <p>Norton University</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h1 className="capitalize text-[#00c9a7] text-center font-bold font-poppins">
-              Experience
-            </h1>
+          {/* part experiece descript */}
+          <div className="lg:w-[700px] flex flex-col justify-center items-center gap-[40px]">
+            <div className="flex flex-col gap-[20px]">
+              <h1 className="capitalize text-[#00c9a7] text-center font-bold font-poppins text-[35px]">
+                Experience
+              </h1>
+              <p className="text-center text-[18px]">{experience}</p>
+            </div>
+
+            <div className="text-success capitalize font-poppins">
+              <div className="flex flex-row gap-[10px] justify-center items-center">
+                <Image
+                  width={"50px"}
+                  src="icons8-collaboration.png"
+                  alt="collaboration"
+                />
+                <p>Team Collaboration</p>
+              </div>
+              <div className="flex flex-row gap-[10px] justify-center items-center">
+                <Image width={"50px"} src="icons8-support.png" alt="Support" />
+                <p>Support team</p>
+              </div>
+              <div className="flex flex-row gap-[10px] justify-center items-center">
+                <Image
+                  width={"50px"}
+                  src="icons8-technical.png"
+                  alt="technical"
+                />
+                <p>technical skill</p>
+              </div>
+            </div>
           </div>
-          <p></p>
         </div>
       </section>
     </main>
