@@ -1,5 +1,6 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
+import { svg } from "framer-motion/dist/client";
 export const Profile: React.FC<IconSvgProps> = ({
   size = 36,
   width,
@@ -222,3 +223,21 @@ export const DiscordIcon = ({
     />
   </svg>
 );
+export const StarIcon = ({
+  size = 20,
+  width,
+  height,
+  ...props
+}: IconSvgProps) => {
+  <svg
+    aria-hidden="true"
+    height={size || height}
+    role="presentation"
+    viewBox="0 0 24 24"
+    focusable="false"
+    width={size || height}
+    {...props}
+  >
+    <path d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7 -7 22.1L32 47.3 50.5 61l-7.1 -22.2z" fill="#ffce31" />
+  </svg>;
+};

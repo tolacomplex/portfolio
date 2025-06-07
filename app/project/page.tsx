@@ -1,8 +1,10 @@
-import { Card, CardBody, CardFooter } from "@heroui/card";
+import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
 import { Button } from "@heroui/button";
+import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
 import { siteConfig } from "@/config/site";
 import { GithubIcon, VercelIcon } from "@/components/icons";
+import { StarIcon } from "@/components/icons";
 import * as React from "react";
 import { Image } from "@heroui/image";
 import * as motion from "framer-motion/client";
@@ -75,7 +77,7 @@ export default function ProjectPage() {
               </CardFooter>
             </Card>
           </div>
-           {/* Card image two display */}
+          {/* Card image two display */}
           <div>
             <Card>
               <CardBody className="p-[20px]">
@@ -145,6 +147,45 @@ export default function ProjectPage() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-[100px]">
+        <div className="flex flex-col justify-center items-center gap-[10px]">
+          <div>
+            <h1 className="capitalize font-bold font-poppins text-success text-[40px] text-center">
+              Masterpieces
+            </h1>
+            <small className="text-default-400 font-poppins text-[18px] capitalize">
+              research and using technical skills
+            </small>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <Card>
+              <CardHeader>
+                <div className="flex flex-row justify-center items-center gap-[10px]">
+                  <div>
+                    <Avatar />
+                  </div>
+                  <div>
+                    <p className="capitalize font-poppins font-medium text-default-400 text-[15px]">
+                      Front-end dev
+                    </p>
+                    <div className="flex flex-row gap-[5px]">
+                      <Image width={"20px"} src="icons8-star.png" />
+                      <Image width={"20px"} src="icons8-star.png" />
+                      <Image width={"20px"} src="icons8-star.png" />
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardBody></CardBody>
+              <CardFooter></CardFooter>
+            </Card>
           </div>
         </div>
       </section>
