@@ -1,6 +1,5 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
-import { svg } from "framer-motion/dist/client";
 export const Profile: React.FC<IconSvgProps> = ({
   size = 36,
   width,
@@ -235,9 +234,36 @@ export const StarIcon = ({
     role="presentation"
     viewBox="0 0 24 24"
     focusable="false"
-    width={size || height}
+    width={size || width}
     {...props}
   >
-    <path d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7 -7 22.1L32 47.3 50.5 61l-7.1 -22.2z" fill="#ffce31" />
+    <path
+      d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7 -7 22.1L32 47.3 50.5 61l-7.1 -22.2z"
+      fill="#ffce31"
+    />
   </svg>;
 };
+export const ArrowIcon = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    height={size || height}
+    role="presentation"
+    viewBox="0 0 448 512"
+    xmlns="http://www.w3.org/2000/svg"
+    width={size || width}
+    {...props}
+  >
+    <g fill="currentColor">
+      <path
+        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+        stroke="#b472d8"
+      />
+    </g>
+  </svg>
+);

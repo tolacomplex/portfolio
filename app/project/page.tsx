@@ -3,14 +3,19 @@ import { Button } from "@heroui/button";
 import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
 import { siteConfig } from "@/config/site";
-import { GithubIcon, VercelIcon } from "@/components/icons";
-import { StarIcon } from "@/components/icons";
+import {
+  GithubIcon,
+  VercelIcon,
+  ArrowIcon,
+  StarIcon,
+} from "@/components/icons";
 import * as React from "react";
 import { Image } from "@heroui/image";
 import * as motion from "framer-motion/client";
 export default function ProjectPage() {
   const description: string =
     "Every project that I have build is using different Programming Languages depend on the project. Like project relative Interface I use programming languages for write a websit. and project relative console almost I use programming language like Python C C++ java programming build it.";
+  const front_end_script: string = ` I have been an experience build a project front-end website. Every project components is using framework NextJs, ReactJs, TailwindCss, and Javascript API build modern wesite that complex component.`;
   return (
     <main>
       {/* Main introduction about project detaill  */}
@@ -163,8 +168,9 @@ export default function ProjectPage() {
         </div>
       </section>
       <section>
-        <div>
-          <div>
+        <div className="lg:grid lg:grid-cols-3 lg:justify-center lg:items-center md:grid md:grid-cols-2 md:justify-center md:items-center sm:grid sm:grid-cols-2 ms:justify-center sm:items-center grid grid-cols-1 justify-center items-center gap-[20px]">
+          {/* Card descript about masterpiece  first in page project */}
+          <div className="border border-default-500 rounded-xl">
             <Card>
               <CardHeader>
                 <div className="flex flex-row justify-center items-center gap-[10px]">
@@ -172,7 +178,7 @@ export default function ProjectPage() {
                     <Avatar />
                   </div>
                   <div>
-                    <p className="capitalize font-poppins font-medium text-default-400 text-[15px]">
+                    <p className="capitalize font-poppins font-medium text-default-400 text-[15px] hover:text-default-600">
                       Front-end dev
                     </p>
                     <div className="flex flex-row gap-[5px]">
@@ -183,8 +189,95 @@ export default function ProjectPage() {
                   </div>
                 </div>
               </CardHeader>
-              <CardBody></CardBody>
-              <CardFooter></CardFooter>
+              <CardBody>
+                <div className="font-poppins text-default-500 text-[16px] leading-7">
+                  {front_end_script}
+                </div>
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <Button
+                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
+                    endContent={<ArrowIcon/>}
+                  >
+                    Let's check
+                  </Button>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card descript about masterpiece  second in page project */}
+          <div className="border border-default-500 rounded-xl">
+            <Card>
+              <CardHeader>
+                <div className="flex flex-row justify-center items-center gap-[10px]">
+                  <div>
+                    <Avatar />
+                  </div>
+                  <div>
+                    <p className="capitalize font-poppins font-medium text-default-400 text-[15px] hover:text-default-600">
+                      Back-end dev
+                    </p>
+                    <div className="flex flex-row gap-[5px]">
+                      <Image width={"20px"} src="icons8-star.png" />
+                      <Image width={"20px"} src="icons8-star.png" />
+                      <Image width={"20px"} src="icons8-star.png" />
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardBody>
+                <div className="font-poppins text-default-500 text-[16px] leading-7">
+                  {front_end_script}
+                </div>
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <Button
+                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
+                    endContent={<ArrowIcon/>}
+                  >
+                    Let's check
+                  </Button>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card descript about masterpiece  third in page project */}
+          <div className="border border-default-500 rounded-xl">
+            <Card>
+              <CardHeader>
+                <div className="flex flex-row justify-center items-center gap-[10px]">
+                  <div>
+                    <Avatar />
+                  </div>
+                  <div>
+                    <p className="capitalize font-poppins font-medium text-default-400 text-[15px] hover:text-default-600">
+                      AI Console
+                    </p>
+                    <div className="flex flex-row gap-[5px]">
+                      <Image width={"20px"} src="icons8-star.png" />
+                      <Image width={"20px"} src="icons8-star.png" />
+                      <Image width={"20px"} src="icons8-star.png" />
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardBody>
+                <div className="font-poppins text-default-500 text-[16px] leading-7">
+                  {front_end_script}
+                </div>
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <Button
+                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
+                    endContent={<ArrowIcon/>}
+                  >
+                    Let's check
+                  </Button>
+                </div>
+              </CardFooter>
             </Card>
           </div>
         </div>
