@@ -1,7 +1,15 @@
+"use client";
 import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "@heroui/modal";
 import { siteConfig } from "@/config/site";
 import {
   GithubIcon,
@@ -10,9 +18,11 @@ import {
   StarIcon,
 } from "@/components/icons";
 import * as React from "react";
-import { Image } from "@heroui/image";
 import * as motion from "framer-motion/client";
+import { Image } from "@heroui/image";
+import { useDisclosure } from "@heroui/react";
 export default function ProjectPage() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const description: string =
     "Every project that I have build is using different Programming Languages depend on the project. Like project relative Interface I use programming languages for write a websit. and project relative console almost I use programming language like Python C C++ java programming build it.";
   const front_end_script: string = ` I have been an experience build a project front-end website. Every project components is using framework NextJs, ReactJs, TailwindCss, and Javascript API build modern wesite that complex component.`;
@@ -198,10 +208,43 @@ export default function ProjectPage() {
                 <div>
                   <Button
                     className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
-                    endContent={<ArrowIcon/>}
+                    endContent={<ArrowIcon />}
+                    onPress={onOpen}
                   >
                     Let's check
                   </Button>
+                  <Modal
+                    isOpen={isOpen}
+                    backdrop="blur"
+                    onOpenChange={onOpenChange}
+                  >
+                    <ModalContent>
+                      {(onClose) => (
+                        <>
+                          <ModalHeader className="flex flex-col gap-1">
+                            Modal Title
+                          </ModalHeader>
+                          <ModalBody>
+                            <p>{front_end_script}</p>
+                            <p>{front_end_script}</p>
+                            <p>{front_end_script}</p>
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button
+                              color="danger"
+                              variant="light"
+                              onPress={onClose}
+                            >
+                              Close
+                            </Button>
+                            <Button color="primary" onPress={onClose}>
+                              Action
+                            </Button>
+                          </ModalFooter>
+                        </>
+                      )}
+                    </ModalContent>
+                  </Modal>
                 </div>
               </CardFooter>
             </Card>
@@ -235,10 +278,43 @@ export default function ProjectPage() {
                 <div>
                   <Button
                     className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
-                    endContent={<ArrowIcon/>}
+                    endContent={<ArrowIcon />}
+                    onPress={onOpen}
                   >
                     Let's check
                   </Button>
+                  <Modal
+                    isOpen={isOpen}
+                    backdrop="blur"
+                    onOpenChange={onOpenChange}
+                  >
+                    <ModalContent>
+                      {(onClose) => (
+                        <>
+                          <ModalHeader className="flex flex-col gap-1">
+                            Modal Title
+                          </ModalHeader>
+                          <ModalBody>
+                            <p>{front_end_script}</p>
+                            <p>{front_end_script}</p>
+                            <p>{front_end_script}</p>
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button
+                              color="danger"
+                              variant="light"
+                              onPress={onClose}
+                            >
+                              Close
+                            </Button>
+                            <Button color="primary" onPress={onClose}>
+                              Action
+                            </Button>
+                          </ModalFooter>
+                        </>
+                      )}
+                    </ModalContent>
+                  </Modal>
                 </div>
               </CardFooter>
             </Card>
@@ -272,10 +348,43 @@ export default function ProjectPage() {
                 <div>
                   <Button
                     className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
-                    endContent={<ArrowIcon/>}
+                    endContent={<ArrowIcon />}
+                    onPress={onOpen}
                   >
                     Let's check
                   </Button>
+                  <Modal
+                    isOpen={isOpen}
+                    backdrop="blur"
+                    onOpenChange={onOpenChange}
+                  >
+                    <ModalContent>
+                      {(onClose) => (
+                        <>
+                          <ModalHeader className="flex flex-col gap-1">
+                            Modal Title
+                          </ModalHeader>
+                          <ModalBody>
+                            <p>{front_end_script}</p>
+                            <p>{front_end_script}</p>
+                            <p>{front_end_script}</p>
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button
+                              color="danger"
+                              variant="light"
+                              onPress={onClose}
+                            >
+                              Close
+                            </Button>
+                            <Button color="primary" onPress={onClose}>
+                              Action
+                            </Button>
+                          </ModalFooter>
+                        </>
+                      )}
+                    </ModalContent>
+                  </Modal>
                 </div>
               </CardFooter>
             </Card>
