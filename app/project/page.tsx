@@ -3,29 +3,28 @@ import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
-import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-} from "@heroui/modal";
 import { siteConfig } from "@/config/site";
 import {
   GithubIcon,
   VercelIcon,
   ArrowIcon,
-  StarIcon,
+  FacebookIcon,
+  LinkendInIcon,
+  TelegramIcon,
 } from "@/components/icons";
 import * as React from "react";
 import * as motion from "framer-motion/client";
 import { Image } from "@heroui/image";
 import { useDisclosure } from "@heroui/react";
 export default function ProjectPage() {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const description: string =
     "Every project that I have build is using different Programming Languages depend on the project. Like project relative Interface I use programming languages for write a websit. and project relative console almost I use programming language like Python C C++ java programming build it.";
   const front_end_script: string = ` I have been an experience build a project front-end website. Every project components is using framework NextJs, ReactJs, TailwindCss, and Javascript API build modern wesite that complex component.`;
+  const back_end_script: string =
+    "It's a complexly then every programming in front-end. back-end is back a user interface it's being a process and store all data of user and protectes any attack from user unlikely. Back-end help any things and be placed that user unknow.";
+  const database_management: string =
+    "Database is a placed that store every data of user. it's have a task protected and store the main data of user secure data break from hacker. It's nessary companied and center easily find and delete unless every data that not true from system.";
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <main>
       {/* Main introduction about project detaill  */}
@@ -165,24 +164,14 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
-      <section className="my-[100px]">
-        <div className="flex flex-col justify-center items-center gap-[10px]">
-          <div>
-            <h1 className="capitalize font-bold font-poppins text-success text-[40px] text-center">
-              Masterpieces
-            </h1>
-            <small className="text-default-400 font-poppins text-[18px] capitalize">
-              research and using technical skills
-            </small>
-          </div>
-        </div>
-      </section>
+      {/* Card detail about reference */}
       <section>
-        <div className="lg:grid lg:grid-cols-3 lg:justify-center lg:items-center md:grid md:grid-cols-2 md:justify-center md:items-center sm:grid sm:grid-cols-2 ms:justify-center sm:items-center grid grid-cols-1 justify-center items-center gap-[20px]">
+        <div className="lg:grid lg:grid-cols-3 lg:justify-center lg:items-center md:grid md:grid-cols-2 md:justify-center md:items-center sm:grid sm:grid-cols-2 sm:justify-center sm:items-center grid grid-cols-1 justify-center items-center gap-[20px]">
           {/* Card descript about masterpiece  first in page project */}
           <div className="border border-default-500 rounded-xl">
             <Card>
               <CardHeader>
+                {/* avatar user input  */}
                 <div className="flex flex-row justify-center items-center gap-[10px]">
                   <div>
                     <Avatar />
@@ -207,59 +196,27 @@ export default function ProjectPage() {
               <CardFooter>
                 <div>
                   <Button
-                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
+                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 lg:w-[370] lg:h-[20px] rounded-lg"
                     endContent={<ArrowIcon />}
-                    onPress={onOpen}
                   >
                     Let's check
                   </Button>
-                  <Modal
-                    isOpen={isOpen}
-                    backdrop="blur"
-                    onOpenChange={onOpenChange}
-                  >
-                    <ModalContent>
-                      {(onClose) => (
-                        <>
-                          <ModalHeader className="flex flex-col gap-1">
-                            Modal Title
-                          </ModalHeader>
-                          <ModalBody>
-                            <p>{front_end_script}</p>
-                            <p>{front_end_script}</p>
-                            <p>{front_end_script}</p>
-                          </ModalBody>
-                          <ModalFooter>
-                            <Button
-                              color="danger"
-                              variant="light"
-                              onPress={onClose}
-                            >
-                              Close
-                            </Button>
-                            <Button color="primary" onPress={onClose}>
-                              Action
-                            </Button>
-                          </ModalFooter>
-                        </>
-                      )}
-                    </ModalContent>
-                  </Modal>
                 </div>
               </CardFooter>
             </Card>
           </div>
-          {/* Card descript about masterpiece  second in page project */}
+          {/* Back-end back at user interface */}
           <div className="border border-default-500 rounded-xl">
             <Card>
               <CardHeader>
+                {/* avatar user input  */}
                 <div className="flex flex-row justify-center items-center gap-[10px]">
                   <div>
                     <Avatar />
                   </div>
                   <div>
                     <p className="capitalize font-poppins font-medium text-default-400 text-[15px] hover:text-default-600">
-                      Back-end dev
+                      back-end dev
                     </p>
                     <div className="flex flex-row gap-[5px]">
                       <Image width={"20px"} src="icons8-star.png" />
@@ -271,65 +228,33 @@ export default function ProjectPage() {
               </CardHeader>
               <CardBody>
                 <div className="font-poppins text-default-500 text-[16px] leading-7">
-                  {front_end_script}
+                  {back_end_script}
                 </div>
               </CardBody>
               <CardFooter>
                 <div>
                   <Button
-                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
+                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 lg:w-[370] lg:h-[20px] rounded-lg"
                     endContent={<ArrowIcon />}
-                    onPress={onOpen}
                   >
                     Let's check
                   </Button>
-                  <Modal
-                    isOpen={isOpen}
-                    backdrop="blur"
-                    onOpenChange={onOpenChange}
-                  >
-                    <ModalContent>
-                      {(onClose) => (
-                        <>
-                          <ModalHeader className="flex flex-col gap-1">
-                            Modal Title
-                          </ModalHeader>
-                          <ModalBody>
-                            <p>{front_end_script}</p>
-                            <p>{front_end_script}</p>
-                            <p>{front_end_script}</p>
-                          </ModalBody>
-                          <ModalFooter>
-                            <Button
-                              color="danger"
-                              variant="light"
-                              onPress={onClose}
-                            >
-                              Close
-                            </Button>
-                            <Button color="primary" onPress={onClose}>
-                              Action
-                            </Button>
-                          </ModalFooter>
-                        </>
-                      )}
-                    </ModalContent>
-                  </Modal>
                 </div>
               </CardFooter>
             </Card>
           </div>
-          {/* Card descript about masterpiece  third in page project */}
+          {/* database management system secure data of user */}
           <div className="border border-default-500 rounded-xl">
             <Card>
               <CardHeader>
+                {/* avatar user input  */}
                 <div className="flex flex-row justify-center items-center gap-[10px]">
                   <div>
                     <Avatar />
                   </div>
                   <div>
                     <p className="capitalize font-poppins font-medium text-default-400 text-[15px] hover:text-default-600">
-                      AI Console
+                      Database system
                     </p>
                     <div className="flex flex-row gap-[5px]">
                       <Image width={"20px"} src="icons8-star.png" />
@@ -341,55 +266,45 @@ export default function ProjectPage() {
               </CardHeader>
               <CardBody>
                 <div className="font-poppins text-default-500 text-[16px] leading-7">
-                  {front_end_script}
+                  {database_management}
                 </div>
               </CardBody>
               <CardFooter>
                 <div>
                   <Button
-                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 w-[370] h-[20px] rounded-lg"
+                    className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 lg:w-[370] lg:h-[20px] rounded-lg"
                     endContent={<ArrowIcon />}
-                    onPress={onOpen}
                   >
                     Let's check
                   </Button>
-                  <Modal
-                    isOpen={isOpen}
-                    backdrop="blur"
-                    onOpenChange={onOpenChange}
-                  >
-                    <ModalContent>
-                      {(onClose) => (
-                        <>
-                          <ModalHeader className="flex flex-col gap-1">
-                            Modal Title
-                          </ModalHeader>
-                          <ModalBody>
-                            <p>{front_end_script}</p>
-                            <p>{front_end_script}</p>
-                            <p>{front_end_script}</p>
-                          </ModalBody>
-                          <ModalFooter>
-                            <Button
-                              color="danger"
-                              variant="light"
-                              onPress={onClose}
-                            >
-                              Close
-                            </Button>
-                            <Button color="primary" onPress={onClose}>
-                              Action
-                            </Button>
-                          </ModalFooter>
-                        </>
-                      )}
-                    </ModalContent>
-                  </Modal>
                 </div>
               </CardFooter>
             </Card>
           </div>
         </div>
+      </section>
+      {/* footer section */}
+      <section>
+        <footer>
+          {/* profile display */}
+          <div>
+            <div className="flex flex-col gap-[40px]">
+              <div className="flex flex-row items-center gap-5">
+                <Avatar src="icon-image.ico" /> <h1>Tola Ouen</h1>
+              </div>
+              <div className="flex flex-row items-center gap-7">
+                <div>{<FacebookIcon />}</div>
+                <div>{<TelegramIcon />}</div>
+                <div>{<LinkendInIcon />}</div>
+                <div>{<GithubIcon />}</div>
+              </div>
+              {/* break page */}
+              <div>
+                
+              </div>
+            </div>
+          </div>
+        </footer>
       </section>
     </main>
   );
