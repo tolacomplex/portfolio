@@ -5,9 +5,7 @@ export default function AboutLayout({
 }) {
   return (
     <section>
-      <div className="container mx-auto  pt-16 px-6 flex-grow">
-        {children}
-      </div>
+      <div className="container mx-auto  pt-16 px-6 flex-grow">{children}</div>
     </section>
   );
 }
