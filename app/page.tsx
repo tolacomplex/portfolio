@@ -1,9 +1,10 @@
 "use client";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { GithubIcon, DownloadIcon, LinkendInIcon } from "@/components/icons";
+import { GithubIcon, DownloadIcon, LinkendInIcon, DiscordIcon, FacebookIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
+import { Avatar } from "@heroui/avatar";
 import { Card, CardBody } from "@heroui/card";
 import * as motion from "framer-motion/client";
 import { CircularProgress } from "@heroui/progress";
@@ -20,7 +21,7 @@ export default function Home() {
   }, []);
   return (
     // Profile detail about my self
-    <main className="mr-[30px] ml-[30px] mt-[100px] mb-[200px]">
+    <main className="mr-[30px] ml-[30px] mt-[100px]">
       {/* One section detail about profile and personal */}
       <section className="mb-[120px]">
         {/* Element include this page */}
@@ -313,6 +314,128 @@ export default function Home() {
             </Card>
           </div>
         </div>
+      </section>
+      <section className="my-[100px]">
+        <footer>
+          {/* profile display */}
+          <div className="lg:flex lg:flex-row lg:justify-center md:flex md:flex-row md:justify-center sm:flex sm:flex-col sm:justify-center flex flex-col justify-center lg:gap-[300px] md:gap-[200px] sm:gap-[100px] gap-[100px]">
+            <div className="lg:flex lg:flex-col md:flex md:flex-col sm:flex sm:flex-col flex flex-col items-center gap-[40px]">
+              <div className="flex flex-row items-center gap-5">
+                <div>
+                  <Avatar src="icon-image.ico" />
+                </div>
+                <div>
+                  <h1 className="font-poppons font-bold">Tola Ouen</h1>
+                  <small className="text-default-300 font-poppins">
+                    Software Development
+                  </small>
+                </div>
+              </div>
+              <div className="flex flex-row items-center gap-7">
+                <div>
+                  <Link
+                    className="text-default-900"
+                    href={siteConfig.links.facebook}
+                    target="blank"
+                  >
+                    {<FacebookIcon />}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className="text-default-900"
+                    href={siteConfig.links.discord}
+                    target="blank"
+                  >
+                    {<DiscordIcon />}
+                  </Link>
+                </div>
+                <div>
+                  {" "}
+                  <Link
+                    className="text-default-900"
+                    href={siteConfig.links.linkendin}
+                    target="blank"
+                  >
+                    {<LinkendInIcon />}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className="text-default-900"
+                    href={siteConfig.links.github}
+                    target="blank"
+                  >
+                    {<GithubIcon />}
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* break page */}
+
+            <div className="flex flex-row gap-[70px] justify-center">
+              {/* footer skills and detail header */}
+              <div className="flex flex-col gap-[10px]">
+                <h1 className="text-[20px] font-poppins font-bold text-[#704ea0]">
+                  Skills
+                </h1>
+                <ul className="font-poppins text-[15px] text-default-400 flex flex-col gap-[5px]">
+                  <li className="hover:text-default-600 hover:underline">
+                    C/C++
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Python
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Java
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Javascript
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Web Development
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Front-end
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Back-end
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Database System
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Networking
+                  </li>
+                  <li>Deployment</li>
+                </ul>
+              </div>
+              {/* footer tools and projec header */}
+              <div className="flex flex-col gap-[10px]">
+                <h1 className="text-[20px] font-bold font-poppins text-[#704ea0]">
+                  Tools
+                </h1>
+                <ul className="text-[15px] text-default-400 font-poppins flex flex-col gap-[5px]">
+                  <li className="hover:text-default-600 hover:underline">
+                    Git&Github
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    VS Code
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Heroui
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Flowbite
+                  </li>
+                  <li className="hover:text-default-600 hover:underline">
+                    Next Deploy
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </section>
     </main>
   );
