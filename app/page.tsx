@@ -10,7 +10,7 @@ import * as motion from "framer-motion/client";
 import { CircularProgress } from "@heroui/progress";
 import * as React from "react";
 export default function Home() {
-  const title_1: string = `I really excited that I have already to be yours. It's a first times I start joining in this career. so that, I can hope support the job.`;
+  const title_1: string = `I really excited that I have already to be yours. It is a first times I start joining in this career. so that, I can hope support the job.`;
   const [value, setValue] = React.useState(0);
   const data_list: number[] = [50, 70, 90, 100];
   React.useEffect(() => {
@@ -337,6 +337,7 @@ export default function Home() {
                     className="text-default-900"
                     href={siteConfig.links.facebook}
                     target="blank"
+                    title="facebook"
                   >
                     {<FacebookIcon />}
                   </Link>
@@ -346,16 +347,17 @@ export default function Home() {
                     className="text-default-900"
                     href={siteConfig.links.discord}
                     target="blank"
+                    title="discord"
                   >
                     {<DiscordIcon />}
                   </Link>
                 </div>
                 <div>
-                  {" "}
                   <Link
                     className="text-default-900"
                     href={siteConfig.links.linkendin}
                     target="blank"
+                    title="LinkedIn"
                   >
                     {<LinkendInIcon />}
                   </Link>
@@ -365,6 +367,7 @@ export default function Home() {
                     className="text-default-900"
                     href={siteConfig.links.github}
                     target="blank"
+                    title="github"
                   >
                     {<GithubIcon />}
                   </Link>

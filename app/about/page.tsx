@@ -11,9 +11,9 @@ import {
 import { siteConfig } from "@/config/site";
 export default function AboutPage() {
   const text_1: string = `Developer Handsome`;
-  const text_2: string = `I'm every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.`;
+  const text_2: string = `I am every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.`;
   const study_des: string = `This a school that I thought out study general knowlegde:`;
-  const experience: string = `I'm a student, so I have some experience to build my project in this school and learning to solve a problem in real-world.`;
+  const experience: string = `I am a student, so I have some experience to build my project in this school and learning to solve a problem in real-world.`;
   return (
     <main className="mb-[30px]">
       <section>
@@ -228,7 +228,7 @@ export default function AboutPage() {
         <div className="gap-[40px] lg:flex lg:flex-col lg:justify-center lg:items-center md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center flex flex-col justif-center items-center">
           <div>
             <h1 className="capitalize text-success text-[40px] font-bold font-poppins text-center">
-              Open source with tools&framework
+              Open source with tools and framework
             </h1>
           </div>
           <div>
@@ -336,6 +336,7 @@ export default function AboutPage() {
                     className="text-default-900"
                     href={siteConfig.links.facebook}
                     target="blank"
+                    title="facebook"
                   >
                     {<FacebookIcon />}
                   </Link>
@@ -345,6 +346,7 @@ export default function AboutPage() {
                     className="text-default-900"
                     href={siteConfig.links.discord}
                     target="blank"
+                    title="discord"
                   >
                     {<DiscordIcon />}
                   </Link>
@@ -355,6 +357,7 @@ export default function AboutPage() {
                     className="text-default-900"
                     href={siteConfig.links.linkendin}
                     target="blank"
+                    title="LinkedIn"
                   >
                     {<LinkendInIcon />}
                   </Link>
@@ -364,6 +367,7 @@ export default function AboutPage() {
                     className="text-default-900"
                     href={siteConfig.links.github}
                     target="blank"
+                    title="github"
                   >
                     {<GithubIcon />}
                   </Link>
@@ -416,7 +420,7 @@ export default function AboutPage() {
                 </h1>
                 <ul className="text-[15px] text-default-400 font-poppins flex flex-col gap-[5px]">
                   <li className="hover:text-default-600 hover:underline">
-                    Git&Github
+                    Github
                   </li>
                   <li className="hover:text-default-600 hover:underline">
                     VS Code

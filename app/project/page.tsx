@@ -18,11 +18,12 @@ import { Image } from "@heroui/image";
 export default function ProjectPage() {
   const description: string =
     "Every project that I have build is using different Programming Languages depend on the project. Like project relative Interface I use programming languages for write a websit. and project relative console almost I use programming language like Python C C++ java programming build it.";
-  const front_end_script: string = ` I have been an experience build a project front-end website. Every project components is using framework NextJs, ReactJs, TailwindCss, and Javascript API build modern wesite that complex component.`;
+  const front_end_script: string =
+    " I have been an experience build a project front-end website. Every project components is using framework NextJs, ReactJs, TailwindCss, and Javascript API build modern wesite that complex component.";
   const back_end_script: string =
-    "It's a complexly then every programming in front-end. back-end is back a user interface it's being a process and store all data of user and protectes any attack from user unlikely. Back-end help any things and be placed that user unknow.";
+    "It is a complexly then every programming in front-end. back-end is back a user interface it's being a process and store all data of user and protectes any attack from user unlikely. Back-end help any things and be placed that user unknow.";
   const database_management: string =
-    "Database is a placed that store every data of user. it's have a task protected and store the main data of user secure data break from hacker. It's nessary companied and center easily find and delete unless every data that not true from system.";
+    "Database is a placed that store every data of user. it's have a task protected and store the main data of user secure data break from hacker. It is nessary companied and center easily find and delete unless every data that not true from system.";
   return (
     <main>
       {/* Main introduction about project detaill  */}
@@ -107,7 +108,7 @@ export default function ProjectPage() {
               <CardFooter>
                 <p className="text-center font-poppins text-[20px]">
                   Every One in the currently started using a digital system, so
-                  demand of creating website is increased.{" "}
+                  demand of creating website is increased.
                 </p>
               </CardFooter>
             </Card>
@@ -118,7 +119,7 @@ export default function ProjectPage() {
         <div>
           <div className="flex flex-col justify-center items-center  gap-10 text-center font-poppins">
             <h1 className="text-center capitalize lg:text-[50px] md:text-[40px] sm:text-[40px] text-[30px] text-secondary font-bold font-poppins ">
-              Schools Project & Researches Project
+              Schools Project and Researches Project
             </h1>
             <p className="lg:w-[900px] md:w-[800px] sm:w-[600px] leading-[30px] lg:text-[20px] md:text-[20px] sm:text-[20px]">
               {description}
@@ -304,6 +305,7 @@ export default function ProjectPage() {
                     className="text-default-900"
                     href={siteConfig.links.facebook}
                     target="blank"
+                    title="facebook"
                   >
                     {<FacebookIcon />}
                   </Link>
@@ -313,16 +315,17 @@ export default function ProjectPage() {
                     className="text-default-900"
                     href={siteConfig.links.discord}
                     target="blank"
+                    title="LinkedIn"
                   >
                     {<DiscordIcon />}
                   </Link>
                 </div>
                 <div>
-                  {" "}
                   <Link
                     className="text-default-900"
                     href={siteConfig.links.linkendin}
                     target="blank"
+                    title="LinkedIn"
                   >
                     {<LinkendInIcon />}
                   </Link>
@@ -332,6 +335,7 @@ export default function ProjectPage() {
                     className="text-default-900"
                     href={siteConfig.links.github}
                     target="blank"
+                    title="github"
                   >
                     {<GithubIcon />}
                   </Link>
