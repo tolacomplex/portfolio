@@ -336,7 +336,7 @@ export default function AboutPage() {
                     className="text-default-900"
                     href={siteConfig.links.facebook}
                     target="blank"
-                    title="facebook"
+                    title="facebook;"
                   >
                     {<FacebookIcon />}
                   </Link>
