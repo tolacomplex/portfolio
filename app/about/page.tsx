@@ -10,10 +10,13 @@ import {
 } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 export default function AboutPage() {
-  const text_1: string = `Developer Handsome`;
-  const text_2: string = `I am every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.`;
-  const study_des: string = `This a school that I thought out study general knowlegde:`;
-  const experience: string = `I am a student, so I have some experience to build my project in this school and learning to solve a problem in real-world.`;
+  const text_1: string = "Developer Handsome";
+  const text_2: string =
+    "I am every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.";
+  const study_des: string =
+    "This a school that I thought out study general knowlegde:";
+  const experience: string =
+    "I am a student, so I have some experience to build my project in this school and learning to solve a problem in real-world.";
   return (
     <main className="mb-[30px]">
       <section>
@@ -352,7 +355,6 @@ export default function AboutPage() {
                   </Link>
                 </div>
                 <div>
-                  {" "}
                   <Link
                     className="text-default-900"
                     href={siteConfig.links.linkendin}
@@ -375,7 +377,6 @@ export default function AboutPage() {
               </div>
             </div>
             {/* break page */}
-
             <div className="flex flex-row gap-[70px] justify-center">
               {/* footer skills and detail header */}
               <div className="flex flex-col gap-[10px]">

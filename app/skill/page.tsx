@@ -8,10 +8,11 @@ import {
   GithubIcon,
   LinkendInIcon,
 } from "@/components/icons";
-import {siteConfig} from "@/config/site";
+import { siteConfig } from "@/config/site";
 import * as motion from "framer-motion/client";
 export default function SkillPage() {
-  const text_program: string = `I have been learning the popular programming language and programming for web development that suppport the business and managements system. `;
+  const text_program: string =
+    "I have been learning the popular programming language and programming for web development that suppport the business and managements system. ";
   return (
     <main className="my-[40px]">
       <section className="my-[50]">
@@ -355,7 +356,6 @@ export default function SkillPage() {
                   </Link>
                 </div>
                 <div>
-                  {" "}
                   <Link
                     className="text-default-900"
                     href={siteConfig.links.linkendin}
@@ -376,7 +376,6 @@ export default function SkillPage() {
               </div>
             </div>
             {/* break page */}
-
             <div className="flex flex-row gap-[70px] justify-center">
               {/* footer skills and detail header */}
               <div className="flex flex-col gap-[10px]">

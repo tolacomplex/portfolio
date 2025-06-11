@@ -1,7 +1,13 @@
 "use client";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { GithubIcon, DownloadIcon, LinkendInIcon, DiscordIcon, FacebookIcon } from "@/components/icons";
+import {
+  GithubIcon,
+  DownloadIcon,
+  LinkendInIcon,
+  DiscordIcon,
+  FacebookIcon,
+} from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Image } from "@heroui/image";
 import { Avatar } from "@heroui/avatar";
@@ -10,7 +16,8 @@ import * as motion from "framer-motion/client";
 import { CircularProgress } from "@heroui/progress";
 import * as React from "react";
 export default function Home() {
-  const title_1: string = `I really excited that I have already to be yours. It is a first times I start joining in this career. so that, I can hope support the job.`;
+  const title_1: string =
+    "I really excited that I have already to be yours. It is a first times I start joining in this career. so that, I can hope support the job.";
   const [value, setValue] = React.useState(0);
   const data_list: number[] = [50, 70, 90, 100];
   React.useEffect(() => {
@@ -38,7 +45,6 @@ export default function Home() {
               >
                 Software Developer
               </motion.p>
-
               <motion.h1
                 initial={{ x: -350 }}
                 animate={{ x: 0 }}
@@ -375,7 +381,6 @@ export default function Home() {
               </div>
             </div>
             {/* break page */}
-
             <div className="flex flex-row gap-[70px] justify-center">
               {/* footer skills and detail header */}
               <div className="flex flex-col gap-[10px]">

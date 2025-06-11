@@ -343,7 +343,6 @@ export default function ProjectPage() {
               </div>
             </div>
             {/* break page */}
-
             <div className="flex flex-row gap-[70px] justify-center">
               {/* footer skills and detail header */}
               <div className="flex flex-col gap-[10px]">
