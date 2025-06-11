@@ -30,7 +30,7 @@ export default function AboutPage() {
                 transition={{ duration: 2, ease: "backOut" }}
                 className="text-purple-500 text-center capitalize font-poppins font-bold lg:text-[40px] md:text-[40px] sm:text-[30px] text-[20px]"
               >
-                I'm modern web Development
+                I&apos;m modern web Development
               </motion.h1>
               <motion.p
                 initial={{ x: 100 }}

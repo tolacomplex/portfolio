@@ -51,7 +51,7 @@ export default function Home() {
                 transition={{ duration: 1, ease: "easeIn" }}
                 className="font-title lg:text-[60px] md:text-[60px] sm:text-[40px] text-[40px] font-bold tracking-[5px] lg:text-start md:text-center sm:text-center text-center text-slate-900 dark:text-white"
               >
-                Hello I'm
+                Hello I&apos;m
               </motion.h1>
               <motion.h1
                 initial={{ y: 500 }}

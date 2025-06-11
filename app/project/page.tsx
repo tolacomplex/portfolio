@@ -144,7 +144,7 @@ export default function ProjectPage() {
               {/* Element text middle between button github and button vercel */}
               <div>
                 <span className="text-[25px] text-primary">
-                  {">"}||{"<"}
+                  {`>`}||{`<`}
                 </span>
               </div>
               {/* Vercel project button */}
@@ -198,7 +198,7 @@ export default function ProjectPage() {
                     className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 lg:w-[370] lg:h-[20px] rounded-lg"
                     endContent={<ArrowIcon />}
                   >
-                    Let's check
+                    Let&apos;s check
                   </Button>
                 </div>
               </CardFooter>
@@ -236,7 +236,7 @@ export default function ProjectPage() {
                     className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 lg:w-[370] lg:h-[20px] rounded-lg"
                     endContent={<ArrowIcon />}
                   >
-                    Let's check
+                    Let&apos;s check
                   </Button>
                 </div>
               </CardFooter>
@@ -274,7 +274,7 @@ export default function ProjectPage() {
                     className="text-[15px] text-center font-poppins bg-default-100 hover:bg-default-500 lg:w-[370] lg:h-[20px] rounded-lg"
                     endContent={<ArrowIcon />}
                   >
-                    Let's check
+                    Let&apos;s check
                   </Button>
                 </div>
               </CardFooter>
