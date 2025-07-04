@@ -12,11 +12,11 @@ import { siteConfig } from "@/config/site";
 export default function AboutPage() {
   const text_1: string = "Developer Handsome";
   const text_2: string =
-    "I am every exciting to start my journey with desire the career. Everything it become a truely things build the massives projects at my school during studying at the college. So that, I have some experience cover your company grow spread.";
+    "I'm a developer. I can flexible in the context to develop a talent in the currently. I'm excited an opportunities learn new environment from the real-world problem and an abilities to improve my knowledge and talent in the career being a modern developer in digital solution. ";
   const study_des: string =
-    "This a school that I thought out study general knowlegde:";
+    "This a school that I thought out study general knowlegde and technical skills:";
   const experience: string =
-    "I am a student, so I have some experience to build my project in this school and learning to solve a problem in real-world.";
+    "Real-world project team participating build a soft and technical solution: ";
   return (
     <main className="mb-[30px]">
       <section>
@@ -267,11 +267,11 @@ export default function AboutPage() {
             <div className="text-success capitalize font-poppins">
               <div className="flex flex-row gap-[10px] justify-center items-center">
                 <Image width={"50px"} src="icons8-brain.png" alt="brain" />
-                <p>Khlong Popork Primary&Secondary School</p>
+                <p className="hover:underline">Khlong Popork Primary&Secondary School</p>
               </div>
               <div className="flex flex-row gap-[10px] justify-center items-center">
                 <Image width={"50px"} src="icons8-book.png" alt="book" />
-                <p>Tuek Phos High School</p>
+                <p className="hover:underline">Tuek Phos High School</p>
               </div>
               <div className="flex flex-row gap-[10px] justify-center items-center">
                 <Image
@@ -279,7 +279,7 @@ export default function AboutPage() {
                   src="icons8-behavior.png"
                   alt="behavior"
                 />
-                <p>Norton University</p>
+                <p className="hover:underline">Norton University</p>
               </div>
             </div>
           </div>
@@ -299,11 +299,11 @@ export default function AboutPage() {
                   src="icons8-collaboration.png"
                   alt="collaboration"
                 />
-                <p>Team Collaboration</p>
+                <p className="hover:underline">Team Collaboration</p>
               </div>
               <div className="flex flex-row gap-[10px] justify-center items-center">
                 <Image width={"50px"} src="icons8-support.png" alt="Support" />
-                <p>Support team</p>
+                <p className="hover:underline">Support team</p>
               </div>
               <div className="flex flex-row gap-[10px] justify-center items-center">
                 <Image
@@ -311,7 +311,7 @@ export default function AboutPage() {
                   src="icons8-technical.png"
                   alt="technical"
                 />
-                <p>technical skill</p>
+                <p className="hover:underline">technical skill</p>
               </div>
             </div>
           </div>

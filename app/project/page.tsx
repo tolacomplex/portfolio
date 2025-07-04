@@ -16,6 +16,10 @@ import * as React from "react";
 import * as motion from "framer-motion/client";
 import { Image } from "@heroui/image";
 export default function ProjectPage() {
+  const basic_dev: string =
+    "Learn how to build a basic web development using HTML and CSS create a moders user interface ralate real-world project.";
+  const advance_dev: string =
+    "After completed basic level and learn how to using framework support frontend project development like libraries UI.";
   const description: string =
     "Every project that I have build is using different Programming Languages depend on the project. Like project relative Interface I use programming languages for write a websit. and project relative console almost I use programming language like Python C C++ java programming build it.";
   const front_end_script: string =
@@ -67,13 +71,13 @@ export default function ProjectPage() {
           {/* Card image one display */}
           <div>
             <Card>
-              <CardBody className="p-[20px]">
+              <CardBody className="p-[10px]">
                 <motion.div
                   whileHover={{ scale: 0.8 }}
                   whileTap={{ scale: 0.8 }}
                 >
                   <Image
-                    className="w-[1200px]"
+                    className="w-[1200px] h-[500px] p-[10px]"
                     src="html-css-im.png"
                     alt="Image"
                   />
@@ -81,11 +85,7 @@ export default function ProjectPage() {
               </CardBody>
               <CardFooter>
                 <p className="text-center font-poppins text-[20px] ">
-                  I have been using popular programming language to build a
-                  <span className="pl-[5px] pr-[5px] underline font-poppins text-[20px] text-primary">
-                    modern website
-                  </span>
-                  for user interface.
+                  {basic_dev}
                 </p>
               </CardFooter>
             </Card>
@@ -93,13 +93,13 @@ export default function ProjectPage() {
           {/* Card image two display */}
           <div>
             <Card>
-              <CardBody className="p-[20px]">
+              <CardBody className="p-[10px]">
                 <motion.div
                   whileHover={{ scale: 0.8 }}
                   whileTap={{ scale: 0.8 }}
                 >
                   <Image
-                    className="w-[1130px]"
+                    className="w-[1200px] h-[500px] p-[10px] rounded-lg"
                     src="website-programmer.png"
                     alt="Image"
                   />
@@ -107,8 +107,7 @@ export default function ProjectPage() {
               </CardBody>
               <CardFooter>
                 <p className="text-center font-poppins text-[20px]">
-                  Every One in the currently started using a digital system, so
-                  demand of creating website is increased.
+                  {advance_dev}
                 </p>
               </CardFooter>
             </Card>

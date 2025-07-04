@@ -12,7 +12,7 @@ import { siteConfig } from "@/config/site";
 import * as motion from "framer-motion/client";
 export default function SkillPage() {
   const text_program: string =
-    "I have been learning the popular programming language and programming for web development that suppport the business and managements system. ";
+    "Every Programs is the populartion all of the programming languages. It's just using different ways like programming for Web Development, Operation System, Data Science, Machine Learning ete.";
   return (
     <main className="my-[40px]">
       <section className="my-[50]">
@@ -26,7 +26,7 @@ export default function SkillPage() {
                 transition={{ duration: 2, ease: "backOut" }}
                 className="lg:text-[50px] md:text-[50px] sm:text-[50px] text-[40px] font-title font-bold text-center text-[#9EDF13]"
               >
-                Development Skills
+                Programming Skills
               </motion.h1>
               <motion.p
                 initial={{ y: 100 }}

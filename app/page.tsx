@@ -17,7 +17,7 @@ import { CircularProgress } from "@heroui/progress";
 import * as React from "react";
 export default function Home() {
   const title_1: string =
-    "I really excited that I have already to be yours. It is a first times I start joining in this career. so that, I can hope support the job.";
+    "I’m a Software Development student eager to grow my skills and knowledge throughout my studies. I’m excited about the opportunity to learn, collaborate, and apply my abilities to solve real-world problems and contribute to the tech industry.";
   const [value, setValue] = React.useState(0);
   const data_list: number[] = [50, 70, 90, 100];
   React.useEffect(() => {
