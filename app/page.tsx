@@ -129,7 +129,7 @@ export default function Home() {
               transition={{ duration: 2, ease: "backOut" }}
             >
               <Image
-                src="ouentola-bg.png"
+                src="ouen-tola-profile.png"
                 alt="Cover profile"
                 width={"300px"}
                 height={"400px"}

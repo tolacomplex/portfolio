@@ -5,7 +5,7 @@ export default function DownloadPage() {
         <div className="flex flex-col justify-center items-center">
           <iframe
             className="lg:w-[1000px] md:w-[800px] sm:w-[500px] w-[400px] h-[500px]"
-            src="ouen_tola_cv.pdf"
+            src="ouen_tola_cv_st.pdf"
             title="Ouen Tola cv display"
           />
         </div>
